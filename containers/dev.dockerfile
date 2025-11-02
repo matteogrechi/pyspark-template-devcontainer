@@ -5,11 +5,17 @@ RUN apt-get update \
     && apt-get install -y openjdk-17-jdk \
     && apt-get clean
 
-# Install pip and venv
+# Install Python 3.10, pip and venv
 RUN apt-get update \
+    && apt-get install -y software-properties-common \
+    && apt-get clean
+
+RUN add-apt-repository ppa:deadsnakes/ppa \
+    && apt-get update \
     && apt-get install -y \
+        python3.10 \
         python3-pip \
-        python3-venv \
+        python3.10-venv \
     && apt-get clean
 
 # Install Pre-commit system-wide

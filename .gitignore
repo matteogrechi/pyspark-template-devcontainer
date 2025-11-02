@@ -1,0 +1,5 @@
+# Ignore everything inside the dataset directory (recursively)
+dataset/**
+
+# But keep the directory itself by tracking this placeholder file
+!dataset/.gitkeep

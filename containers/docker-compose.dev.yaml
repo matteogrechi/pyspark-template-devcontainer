@@ -1,0 +1,11 @@
+services:
+  spark-dev:
+    build: 
+      dockerfile: dev.dockerfile
+    image: docker.io/library/spark-dev:latest
+    container_name: spark-dev
+    volumes:
+      - ..:/workspace
+    working_dir: /workspace
+    command: sleep infinity
+    

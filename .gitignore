@@ -3,3 +3,23 @@ dataset/**
 
 # But keep the directory itself by tracking this placeholder file
 !dataset/.gitkeep
+
+# Ignore venv directory
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
